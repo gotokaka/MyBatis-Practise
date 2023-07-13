@@ -1,13 +1,13 @@
-DROP TABLE IF EXISTS animals;
+DROP TABLE IF EXISTS names;
 
-CREATE TABLE animals (
+CREATE TABLE names (
   id int unsigned AUTO_INCREMENT,
   name VARCHAR(100) NOT NULL,
   PRIMARY KEY(id)
 );
 
-INSERT INTO animals (id, name) VALUES (1, "猫");
-INSERT INTO animals (id, name) VALUES (2, "犬");
-INSERT INTO animals (id, name) VALUES (3, "鳥");
+INSERT INTO names (name) VALUES ("うなぎ猫");
+INSERT INTO names (name) VALUES ("リョウジ");
+INSERT INTO names (name) VALUES ("イーロンマスク");
 
 
