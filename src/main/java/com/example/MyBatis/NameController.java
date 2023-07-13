@@ -15,8 +15,9 @@ public class NameController {
   }
 
   @GetMapping("/names")
-  public  List<Name> getAnimalNames() {
-    return nameMapper.findAll();
+  public  List<Name> Names() {
+    List<Name> names = nameMapper.findAll();
+    return names;
   }
 
 }
