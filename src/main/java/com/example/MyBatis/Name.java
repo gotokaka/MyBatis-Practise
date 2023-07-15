@@ -11,9 +11,6 @@ public class Name {
     this.name = name;
   }
 
-  //デフォルトコンストラクタが必要だったようです。これがないと上手くレスポンスできませんでした。
-  public Name() {
-  }
 
   public String getName() {
     return name;
