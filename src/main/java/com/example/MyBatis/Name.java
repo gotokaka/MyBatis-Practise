@@ -2,14 +2,17 @@ package com.example.MyBatis;
 
 public class Name {
 
+  private int id;
   private String name;
 
-  private int id;
 
-
-  public Name(String name, int id) {
-    this.name = name;
+  public Name(int id, String name) {
     this.id = id;
+    this.name = name;
+  }
+
+  //デフォルトコンストラクタが必要だったようです。これがないと上手くレスポンスできませんでした。
+  public Name() {
   }
 
   public String getName() {
@@ -18,8 +21,5 @@ public class Name {
 
   public int getId() {
     return id;
-  }
-  //デフォルトコンストラクタが必要だったようです。これがないと上手くレスポンスできませんでした。
-  public Name() {
   }
 }
