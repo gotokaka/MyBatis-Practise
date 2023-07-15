@@ -13,11 +13,13 @@ public class Name {
   }
 
   public String getName() {
-    return this.name;
+    return name;
   }
 
   public int getId() {
-    return this.id;
+    return id;
   }
-
+  //デフォルトコンストラクタが必要だったようです。これがないと上手くレスポンスできませんでした。
+  public Name() {
+  }
 }
