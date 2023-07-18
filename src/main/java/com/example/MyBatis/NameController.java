@@ -9,16 +9,17 @@ import java.util.List;
 @RestController
 public class NameController {
 
-  private final NameMapper nameMapper;
+  //Controller -> Service -> Mapperの順で処理を行う。
 
-  public NameController(NameMapper nameMapper) {
-    this.nameMapper = nameMapper;
+  private final NameService nameService;
+
+  public NameController(NameService nameService) {
+    this.nameService = nameService;
   }
 
   @GetMapping("/names")
   public List<Name> names() {
-    List<Name> names = nameMapper.findAll();
+    List<Name> names = nameService.findAll();
     return names;
   }
-
 }
