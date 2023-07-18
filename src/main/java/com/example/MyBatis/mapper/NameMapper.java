@@ -1,5 +1,6 @@
-package com.example.MyBatis;
+package com.example.MyBatis.mapper;
 
+import com.example.MyBatis.entity.Name;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

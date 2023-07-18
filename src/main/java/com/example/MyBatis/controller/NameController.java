@@ -1,6 +1,9 @@
-package com.example.MyBatis;
+package com.example.MyBatis.controller;
 
 
+import com.example.MyBatis.Service.NameService;
+import com.example.MyBatis.entity.Name;
+import com.example.MyBatis.entity.NameResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

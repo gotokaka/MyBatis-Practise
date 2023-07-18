@@ -1,4 +1,6 @@
-package com.example.MyBatis;
+package com.example.MyBatis.Service;
+
+import com.example.MyBatis.entity.Name;
 
 import java.util.List;
 

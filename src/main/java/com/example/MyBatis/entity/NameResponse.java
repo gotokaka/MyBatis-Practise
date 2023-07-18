@@ -1,4 +1,4 @@
-package com.example.MyBatis;
+package com.example.MyBatis.entity;
 
 public class NameResponse {
   private int id;

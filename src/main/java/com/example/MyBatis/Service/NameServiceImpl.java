@@ -1,5 +1,7 @@
-package com.example.MyBatis;
+package com.example.MyBatis.Service;
 
+import com.example.MyBatis.entity.Name;
+import com.example.MyBatis.mapper.NameMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
